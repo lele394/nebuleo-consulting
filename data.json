@@ -1,0 +1,36 @@
+[
+    {
+      "slug": "alice-smith",
+      "email": "alice@example.com",
+      "name": "Alice Smith",
+      "profilePic": "/images/leo.webp",
+      "github": "https://github.com/alicesmith",
+      "shortIntro": "Specialist in AI and data visualization.",
+      "longIntro": "Alice has 10+ years of experience in AI: deep learning, reinforcement learning, and data visualization for scientific and industrial use-cases.",
+      "projects": [
+        {
+          "name": "NeuralViz",
+          "link": "https://github.com/alicesmith/neuralviz",
+          "shortDesc": "Real-time neural network visualization toolkit.",
+          "bgImage": "/images/neuralviz.jpg"
+        },
+        {
+          "name": "DataFlow",
+          "link": "https://github.com/alicesmith/dataflow",
+          "shortDesc": "Streaming data analysis framework.",
+          "bgImage": "/images/dataflow.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "bob-johnson",
+      "email": "bob@example.com",
+      "name": "Bob Johnson",
+      "profilePic": "/images/bob.jpg",
+      "github": "https://github.com/bobjohnson",
+      "shortIntro": "Physics simulation and computational modeling.",
+      "longIntro": "Bob builds high-performance physics/engineering simulation frameworks with a focus on numerical stability and GPU acceleration.",
+      "projects": []
+    }
+  ]
+  

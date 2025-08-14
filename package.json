@@ -1,0 +1,16 @@
+{
+  "name": "consulting-site",
+  "version": "1.0.0",
+  "description": "Consulting association website with Node.js, EJS, and JSON data.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development node server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "slugify": "^1.6.6"
+  }
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Léo BECHET",
+    "title": "PhD student at Uppsala University",
+    "email": "lele394prod@gmail.com",
+    "profilePicture": "/images/leo/leo.webp",
+    "github": "https://github.com/lele394",
+    "shortIntro": "PhD student at Uppsala University, with a background in computational physics and artificial intelligence, I strive in creating custom solutions for any challenges. ",
+    "longIntro": "<h2>Personal Introduction</h2><p>Hello! I am Léo Bechet, a computational physicist and AI enthusiast with a strong passion for astronomy, optics, and computer science. Curious and analytical, I thrive on complex technical challenges and enjoy exploring interdisciplinary scientific problems. I am fluent in English (C1+) and French (native), with basic knowledge of Spanish and Japanese.</p><h2>Professional Introduction</h2><p>I hold a Master's degree in Computational Physics and am pursuing a PhD in energy-efficient algorithmic solutions. I specialize in computational physics, AI, and neural network development. My work blends scientific research with practical software development, including high-performance simulations, GPU programming, and hybrid neural network training methods.</p><h2>Education</h2><ul><li>PhD – Energy-efficient algorithmic solutions driven by data-intensive applications, Uppsala University</li><li>Master 2 & Master 1 – Physics & Computational Physics, University of Bourgogne Franche-Comté</li><li>Bachelor – Fundamental Physics, University of Bourgogne Franche-Comté</li><li>Higher school preparatory classes – Physics-Chemistry & Engineering Science, Lycée Follereau</li></ul><h2>Research Experience</h2><ul><li>Hybrid Gradient Propagation via DFA-Seeding, System 7 Lab, Tokyo University</li><li>Stepper Motor-Based Laser Sweeping, FEMTO-ST</li><li>3D Extinction Mapping of the Milky Way using ANN, University of Bourgogne Franche-Comté</li><li>Multidimensional Potential Energy Surfaces, University of Bourgogne Franche-Comté</li><li>Space Battle Around a Black Hole Simulation, University of Bourgogne Franche-Comté</li></ul><h2>Projects</h2><ul><li>GPU/CPU Optimized N-Body Simulation</li><li>Conway’s Game of Life Stability Study</li><li>Strange Attractor Visualizer</li><li>Marching Cubes Algorithm Web Demo</li><li>Web-Based 3D Raycast Renderer</li></ul><h2>Skills & Focus Areas</h2><ul><li>Programming: Fortran, OpenMP, OpenACC, Python, JavaScript/HTML/CSS, NodeJS, C#, C, Bash, GLSL/HLSL</li><li>Frameworks & Tools: TensorFlow, PyTorch, Jupyter, LaTeX, Docker, Fusion 360</li><li>Numerical & Physical Simulations, Embedded Systems, Server Administration</li></ul><h2>Interests</h2><ul><li>Astronomy & Astrophotography</li><li>Optics and Experimental Chemistry</li><li>Procedural Simulations & AI Research</li><li>Photography, Image Processing, and Computer Graphics</li></ul>",
+    "projects": [
+      {
+        "name": "FeatherPress",
+        "link": "https://github.com/lele394/FeatherPress",
+        "shortDescription": "A lightweight Node.js server designed to serve Markdown files as HTML web pages, featuring template injection, category indexes, syntax highlighting, LaTeX support, and flexible content organization.",
+        "backgroundImage": "/images/leo/projects/featherpress.png"
+      },
+      {
+        "name": "Cellular Automata",
+        "link": "https://github.com/lele394/Cellular-Automata",
+        "shortDescription": "A Python-based implementation of multiple Cellular Automata. The system supports CUDA kernels and implements hardware acceleration using GPU.",
+        "backgroundImage": "/images/leo/projects/cellular_automata.png"
+      },
+      {
+        "name": "Monte Carlon Rate-Equations",
+        "link": "https://github.com/lele394/Rate-equations-or-MC-approaches-for-modelling-growth",
+        "shortDescription": "A high-performance Python simulation of particle aggregation using Numba for parallel processing. Features a custom multi-pass grid update and analysis with DFS and parallel Union-Find.",
+        "backgroundImage": "/images/leo/projects/rate_equation.png"
+      },
+      {
+        "name": "N-Body using Fortran OpenMP and OpenACC",
+        "link": "https://github.com/lele394/Fortran-N-Body-OpenMP-OpenACC",
+        "shortDescription": "A high-performance Fortan N-Body simulation. The project contains a single threaded, a multi-threaded CPU OpenMP, and an OpenACC GPU approaches. Results can be verified using the conservation of energy. ",
+        "backgroundImage": "/images/leo/projects/nbody.png"
+      }
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "name": "Niels FAUCHER",
+    "email": "lele394prod@gmail.com",
+    "profilePicture": "/images/niels/niels.png",
+    "github": "https://github.com/Niels-F",
+    "shortIntro": "Niels' small intro ",
+    "longIntro": "Niels' intro",
+    "projects": [
+      {
+        "name": "AI-Powered Logistics Optimizer",
+        "link": "https://github.com/example/project-one",
+        "shortDescription": "Reduced shipping costs by 18% through a predictive routing algorithm.",
+        "backgroundImage": "https://images.unsplash.com/photo-1555212697-194d092e3b8f?q=80&w=1974"
+      }
+    ]
+  }
+
+
+]

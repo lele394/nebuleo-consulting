@@ -1,0 +1,418 @@
+/* CSS Variables */
+:root {
+    --primary-color: #0a2342;
+    --secondary-color: #2ca58d;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --light-text-color: #fff;
+    --border-color: #dee2e6;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --spacing-unit: 1rem;
+    --border-radius: 8px;
+}
+
+/* General Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: calc(var(--spacing-unit) * 2);
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header & Footer */
+.main-header {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: calc(var(--spacing-unit) * 2) var(--spacing-unit);
+    text-align: center;
+}
+
+.main-footer {
+    text-align: center;
+    padding: calc(var(--spacing-unit) * 1.5);
+    margin-top: calc(var(--spacing-unit) * 2);
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+/* Home Page: Person Card */
+.person-card {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: calc(var(--spacing-unit) * 2);
+    padding: calc(var(--spacing-unit) * 1.5);
+    display: flex;
+    align-items: center;
+    gap: calc(var(--spacing-unit) * 1.5);
+    flex-wrap: wrap; /* Default behavior for mobile */
+}
+
+.person-card .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--border-color);
+}
+
+.person-card .person-intro {
+    flex: 1;
+}
+
+/* Detail Page Styles */
+.detail-header {
+    background-color: #fff;
+    padding: calc(var(--spacing-unit) * 2) 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--spacing-unit) * 2);
+    flex-wrap: wrap;
+}
+
+.profile-pic-large {
+    width: 180px;
+    height: 180px;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    box-shadow: var(--shadow);
+}
+
+.github-link {
+    font-weight: bold;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: var(--spacing-unit);
+}
+
+section {
+    background: #fff;
+    padding: calc(var(--spacing-unit) * 1.5);
+    margin-bottom: calc(var(--spacing-unit) * 2);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Default one column for mobile */
+    gap: var(--spacing-unit);
+}
+
+
+
+
+
+
+
+
+
+
+
+.project-content .btn-project {
+    display: block; /* Allows the use of auto margins for centering */
+    width: fit-content; /* Makes the button only as wide as its text content + padding */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--spacing-unit); /* Adds some space above the button */
+}
+
+
+/* 
+
+
+.project-card {
+    color: var(--light-text-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    position: relative;
+    min-height: 250px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 50%);
+}
+
+.project-content {
+    padding: var(--spacing-unit);
+    position: relative;
+    z-index: 1;
+} */
+
+/* =================================================== */
+/* ==== NEW, INTERACTIVE PROJECT CARD STYLES ==== */
+/* =================================================== */
+
+.project-card {
+    /* --- Core container --- */
+    border-radius: var(--border-radius);
+    overflow: hidden; /* This is crucial for the reveal effect */
+    position: relative;
+    min-height: 250px;
+    background-size: cover;
+    background-position: center;
+    color: var(--light-text-color); /* Move text color here */
+}
+
+.project-content {
+    /* --- The sliding panel --- */
+    background-color: rgba(0, 0, 0, 0.8); /* 80% opaque black background */
+    box-sizing: border-box; /* Ensures padding is included in height */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+    /* --- Initial State (Collapsed) --- */
+    height: 80px; /* Start height, just enough for the title */
+    padding: var(--spacing-unit);
+
+    /* --- Animation --- */
+    /* Smoothly animate the change in height */
+    transition: height 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* --- Hover State: Expand the panel --- */
+.project-card:hover .project-content {
+    height: 100%; /* Expand to full height on hover */
+}
+
+.project-content h3 {
+    /* Ensure title doesn't have extra margins affecting layout */
+    margin-bottom: var(--spacing-unit);
+}
+
+/* --- Project Description and Button (Initially Hidden) --- */
+.project-content p, 
+.project-content .btn-project {
+    opacity: 0; /* Start fully transparent */
+    
+    /* --- Animation --- */
+    /* Animate opacity change. The 'delay' makes them appear after the panel starts growing. */
+    transition: opacity 0.3s ease-in-out 0.25s;
+}
+
+/* --- Hover State: Reveal description and button --- */
+.project-card:hover .project-content p,
+.project-card:hover .project-content .btn-project {
+    opacity: 1; /* Make them fully visible on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Buttons */
+.btn, .btn-contact, .btn-project {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-section form {
+    text-align: center;
+}
+
+.btn {
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+}
+
+.btn:hover {
+    background-color: #238b76;
+    color: var(--light-text-color);
+    transform: translateY(-2px);
+}
+
+.btn-contact {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    width: 100%;
+    max-width: 300px;
+}
+
+.btn-contact:hover {
+     background-color: #081c33;
+     color: var(--light-text-color);
+}
+
+
+.btn-project {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--primary-color);
+    font-size: 0.9em;
+    padding: 0.5rem 1rem;
+}
+
+.btn-project:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .person-card, .profile-header {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center;
+    }
+
+    .profile-header {
+        align-items: center;
+    }
+
+
+
+
+
+
+    .logo {
+        display: none;
+    }
+
+    .header-content {
+        justify-content: center; /* center text when logo is gone */
+    }
+
+    .header-text {
+        align-items: center; /* optional: keep text centered */
+    }
+}
+
+@media (min-width: 769px) {
+    /* Two-column grid for projects on larger screens */
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+
+
+    .logo {
+        display: block; /* or inline-block */
+    }
+}
+
+
+
+
+
+
+
+
+/* HEADER */
+
+.main-header {
+    width: 100%;
+    background: var(--primary-color);
+    border-bottom: 2px solid #ddd;
+    padding: 1rem 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* vertically center logo and text */
+    justify-content: center; /* center the whole row in the header */
+    gap: 1rem; /* optional: space between logo and text */
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin: auto;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column; /* stack h1 and p vertically */
+    align-items: center; /* center text under h1 */
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+    border: 2px solid var(--border-color);
+}
+
+.header-text p {
+    font-size: 1rem;
+    margin: 0;
+    color: #555;
+    font-style: italic;
+}
+
+.profile-info p {
+    font-size: 1.2rem;   /* slightly larger than normal text */
+    color: #777;         /* gray color */
+    font-style: italic;  /* make it italic */
+    margin: 0.2rem 1rem;    /* optional: small margin for spacing */
+    margin-bottom: 1rem;
+}
+
+.profile-info h1 {
+    margin: 0.2rem 0;    /* optional: small margin for spacing */
+}
