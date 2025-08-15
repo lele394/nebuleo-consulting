@@ -416,3 +416,12 @@ section {
 .profile-info h1 {
     margin: 0.2rem 0;    /* optional: small margin for spacing */
 }
+
+
+
+
+
+
+.long-intro, .about-us, .expertise, .how-we-work  {
+    text-align: justify;
+}
