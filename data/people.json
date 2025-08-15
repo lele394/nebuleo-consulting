@@ -82,7 +82,7 @@
         "name": "N-Body using Fortran OpenMP and OpenACC",
         "link": "https://github.com/Niels-F/N-Body-Simulation",
         "shortDescription": "A high-performance Fortan N-Body simulation. The project contains a single threaded, a multi-threaded CPU OpenMP, and an OpenACC GPU approaches. Results can be verified using the conservation of energy and momentum. ",
-        "backgroundImage": "/images/leo/projects/nbody.png"
+        "backgroundImage": "/images/niels/projects/nbody.webp"
       }
     ]
   }
