@@ -18,7 +18,7 @@
         "name": "Cellular Automata",
         "link": "https://github.com/lele394/Cellular-Automata",
         "shortDescription": "A Python-based implementation of multiple Cellular Automata. The system supports CUDA kernels and implements hardware acceleration using GPU.",
-        "backgroundImage": "/images/leo/projects/cellular_automata.png"
+        "backgroundImage": "/images/leo/projects/cellular_automata.gif"
       },
       {
         "name": "Monte Carlon Rate-Equations",
@@ -30,7 +30,7 @@
         "name": "N-Body using Fortran OpenMP and OpenACC",
         "link": "https://github.com/lele394/Fortran-N-Body-OpenMP-OpenACC",
         "shortDescription": "A high-performance Fortan N-Body simulation. The project contains a single threaded, a multi-threaded CPU OpenMP, and an OpenACC GPU approaches. Results can be verified using the conservation of energy. ",
-        "backgroundImage": "/images/leo/projects/nbody.png"
+        "backgroundImage": "/images/leo/projects/nbody.gif"
       }
     ]
   },
@@ -51,17 +51,36 @@
 
   {
     "name": "Niels FAUCHER",
-    "email": "lele394prod@gmail.com",
-    "profilePicture": "/images/niels/niels.png",
+    "title": "",
+    "email": "faucher.niels8@gmail.com",
+    "profilePicture": "/images/niels/niels.webp",
     "github": "https://github.com/Niels-F",
-    "shortIntro": "Niels' small intro ",
-    "longIntro": "Niels' intro",
+    "shortIntro": "Graduate in computational physics and specialized in artificial intelligence, my goal is to architect and implement sophisticated algorithms and predictive models to analyze large-scale datasets, providing data-centric solutions for complex systems or any challenges. ",
+    "longIntro": "<h2>Personal Introduction</h2><p>Hello! I am Niels FAUCHER, a computational physicist and AI enthusiast with a strong passion for non-linear systems and condensed matter physics, with a specific focus on the emergent behavior of magnetic skyrmions. As a computational physicist, I specialize in predictive modeling using Reservoir Computing (RC). My work is focused on applying these models to highly complex non-linear systems, pushing the boundaries of their predictive capabilities while continuously advancing their architecture. I am fluent in English (C1+) and French (native), with basic knowledge of Italian.</p><h2>Professional Introduction</h2><p>I hold a Master's degree in Computational Physics and am applying this expertise at Adularia, a company dedicated to developing next-generation immunotherapies. My role is to pioneer an AI strategy using generative models, architecting systems with techniques like Flow Matching that excel at constructing complex, structured data from simple noise.<br>Alongside this focus on generative AI, I have a distinct specialization in an alternative computational paradigm: Reservoir Computing. This expertise is not just theoretical; it was the core of my research internship at the University of Tokyo, where I was tasked with designing and building a numerical Physical Reservoir Computer (PRC) from the ground up, using the dynamics of magnetic skyrmions.</p><h2>Education</h2><ul><li>Master 2 & Master 1 – Physics & Computational Physics, University of Bourgogne Franche-Comté</li><li>Bachelor – Fundamental Physics, University of Montpellier</li></ul><h2>Research Experience</h2><ul><li>Physical Reservoir Computing based on magnetic skyrmion, Physical Intelligence Lab, Tokyo University</li><li>Study of the Kuramoto model for Photonic AI, FEMTO-ST</li><li>Developement of a Monte Carlo Markov Chain (MCMC) to study the internal structure of planets, University of Zurich</li><li>Developement of the world investement network (WIN) based on the Pagerank algorithm, University of Bourgogne Franche-Comté</li><li>PhotoElectric Heating On Interstellar Grains Simulation, University of Bourgogne Franche-Comté</li></ul><h2>Projects</h2><ul><li>GPU/CPU Optimized N-Body Simulation</li><li>Non-linear model simulation: Study of the Tamari model</li><li>Application of principal component analysis(PCA) to the analysis of sports results</li><li>Study the behavior of two types of Carbon NanoTubes using the software VASP (Vienna Ab initio Simulation Package)</li></ul><h2>Skills & Focus Areas</h2><ul><li>Programming: Fortran, OpenMP, OpenACC, Python, Bash</li><li>Frameworks & Tools: Magnum.np, TensorFlow, PyTorch, Jupyter, LaTeX </li><li>Numerical & Physical Simulations</li></ul><h2>Interests</h2><ul><li>Exploring complex system and utilized them for next-generation computing and predictive intelligence.</li><li>Procedural Simulations & AI Research</li><li>Sports : swimming, hiking and wrestling</li></ul>",
     "projects": [
       {
-        "name": "AI-Powered Logistics Optimizer",
-        "link": "https://github.com/example/project-one",
-        "shortDescription": "Reduced shipping costs by 18% through a predictive routing algorithm.",
-        "backgroundImage": "https://images.unsplash.com/photo-1555212697-194d092e3b8f?q=80&w=1974"
+        "name": "MCMC",
+        "link": "https://github.com/Niels-F/MCMC",
+        "shortDescription": "Markov Chain Monte Carlo (MCMC) simulations to estimate internal structure parameters of a planetary model.",
+        "backgroundImage": "/images/leo/projects/featherpress.png"
+      },
+      {
+        "name": "Rate-equations-for-modeling-growth",
+        "link": "https://github.com/Niels-F/Rate-equations-for-modeling-growth",
+        "shortDescription": "Simulation of the aggregation and diffusion of particles on a surface. A Monte Carlo approach was used to ensure our findings were statistically robust and validate the predictions of theoretical Rate Equation models.",
+        "backgroundImage": "/images/leo/projects/cellular_automata.png"
+      },
+      {
+        "name": "Kuramoto Model",
+        "link": "https://github.com/Niels-F/Kuramoto-Model",
+        "shortDescription": "The Kuramoto model can be used to study synchronization dynamics in coupled systems — specifically, in vertical-cavity surface-emitting lasers (VCSELs), which are key components in photonic neural networks.",
+        "backgroundImage": "/images/leo/projects/rate_equation.png"
+      },
+      {
+        "name": "N-Body using Fortran OpenMP and OpenACC",
+        "link": "https://github.com/Niels-F/N-Body-Simulation",
+        "shortDescription": "A high-performance Fortan N-Body simulation. The project contains a single threaded, a multi-threaded CPU OpenMP, and an OpenACC GPU approaches. Results can be verified using the conservation of energy and momentum. ",
+        "backgroundImage": "/images/leo/projects/nbody.png"
       }
     ]
   }
