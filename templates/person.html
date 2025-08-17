@@ -23,6 +23,22 @@
     </header>
 
     <main class="container">
+        
+        
+        <section class="resume-section">
+            <details>
+                <summary class="resume-summary">
+                    Expand {{person.name}}'s Resume'
+                </summary>
+                <div class="pdf-container">
+                    <iframe src="{{person.resume}}#zoom=page-fit"></iframe>
+                </div>
+            </details>
+        </section>
+        
+
+
+
         <section class="long-intro">
             <h2>About {{person.name}}</h2>
             <p>{{person.longIntro}}</p>
@@ -42,6 +58,10 @@
                 <a href="mailto:{{person.email}}" class="btn btn-contact">Send Email</a>
             </form>
         </section>
+
+
+
+
     </main>
 
     <!-- <footer class="main-footer">

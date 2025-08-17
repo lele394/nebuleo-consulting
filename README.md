@@ -15,6 +15,7 @@ Fill it in, add the correct images and correct path, and the new person should a
     "profilePicture": "to fill out by the owner according to paths",
     "github": "linked to your github",
     "linkedin": "link to your linked-in",
+    "resume": "link to resume.pdf",
     "shortIntro": "Very short introduction about yourself, max 2 sentences",
     "longIntro": "Longer intro, use HTML for formatting (ask chat gpt)",
     "projects": [
